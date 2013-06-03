@@ -9,6 +9,7 @@ group :development, :test do
   gem 'sqlite3'
   #For dumping db
   gem 'seed_dump'
+  gem 'rspec-rails', '~> 2.0'
 end
 group :production do
   gem 'pg'
