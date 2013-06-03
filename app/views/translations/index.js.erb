@@ -1,0 +1,2 @@
+$("#translations").html("<%= escape_javascript(render(@translations)) %>");
+$("#result").html("<%= escape_javascript(@translations.first.translated_word) %>");
