@@ -8,7 +8,7 @@
 		<div class='step selectLang'>
 			<h3>Choose languages</h3>
 			<%= f.select :from_lang, @languages_hash %> — 
-			<%= f.select :to_lang, @languages_hash %>
+			<%= f.select :to_lang, @languages_hash, :selected => @languages_hash[:polish] %>
 		</div>
 
 		<div class='step typePhrase'>
@@ -20,7 +20,7 @@
 		<div class='step getResult'>
 			<h3>Get the result</h3>
 			<%#= f.text_field :translated_word, disabled: true %>
-			<span id="result"></span>
+			<span id="result">...you haven't typed your phrase yet...</span>
 		</div>
 
 	<% end %>

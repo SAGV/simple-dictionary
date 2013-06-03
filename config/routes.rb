@@ -1,6 +1,8 @@
 Dictionary::Application.routes.draw do
   resources :translations
 
+  root to: 'translations#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
